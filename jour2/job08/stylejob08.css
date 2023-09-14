@@ -1,0 +1,25 @@
+.maliste{
+    list-style: none;
+    
+}
+
+.maliste__elements1::before{
+    content: '📳';
+    
+}
+.maliste__elements2::before{
+    content: '💻';
+}
+.maliste__elements3::before{
+    content: '🚩';
+}
+
+.maliste__elements1::after{
+    content: '🧠';
+}
+.maliste__elements2::after{
+    content: '🧠';
+}
+.maliste__elements3::after{
+    content: '🧠';
+}
