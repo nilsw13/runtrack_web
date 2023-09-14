@@ -1,0 +1,26 @@
+html, body {
+    background-color: red;
+}
+
+.boutton__pos{
+    background-color: yellow;
+    height: 35vh;
+    width: 35vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 18em 28em;
+}
+
+.boutton{
+    
+    height: 12vh;
+    width: 10vw;
+    background-color: blue;
+    
+}
+
+.boutton:hover{
+    background-color: red;
+    transform: rotate(180deg);
+}
