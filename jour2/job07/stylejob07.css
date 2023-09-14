@@ -1,0 +1,20 @@
+:root {
+    --main-bg-color: red;
+    --main-font-size: 25px;
+    --main-font-color: yellow;
+    --second-font-color: blue;
+}
+
+html, body{
+    background-color: var(--main-bg-color);
+}
+
+.jesaispas__titre{
+    background-color: var(--main-bg-color);
+    font-size: var(--main-font-size);
+    color: var(--main-font-color);
+}
+
+li{
+    color: var(--second-font-color);
+}
