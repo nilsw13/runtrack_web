@@ -1,0 +1,31 @@
+
+body, html {
+    background-color: rgb(96, 179, 214);
+}
+
+h1 {
+    margin: 5em 15em;
+}
+
+.mesImages img {
+    width: 10vw;
+    height: 11vh;
+    padding: 3em 5em;
+}
+
+.mesImages img[target] {
+    width: 20vw;
+    height: 20vh;
+}
+
+#acc {
+    color: yellow;
+}
+
+#acc::before {
+    content: url("https://mozorg.cdn.mozilla.net/media/img/favicon.ico") / "Mozilla";
+    
+    
+    color: red;
+}
+

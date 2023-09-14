@@ -1,0 +1,33 @@
+html, body {
+    background-color: rgb(222, 97, 97);
+}
+
+form{
+    padding: 2em 29em;
+}
+
+
+.form__title{
+    color: blue;
+}
+
+.form__label{
+    color: yellow;
+    height: 3vh;
+}
+
+.form__input{
+    height: 3vh;
+    color: green;
+}
+
+
+.form__button{
+    margin: 2em 0em;
+    padding: 2em;
+    color: blue;
+}
+
+.form__button:active{
+    background-color: black;
+}
