@@ -1,0 +1,41 @@
+
+body, html {
+    background-color: yellowgreen;
+}
+
+
+li {
+    display: inline-block;
+    
+ }
+ 
+ ul li  {
+    
+    list-style: none;
+    
+}
+
+ul li a {
+    
+    text-decoration: none;
+    color: white;
+}
+
+a[target] {
+    color: red;
+}
+
+.mesImages img {
+    height: 12vh;
+    width: 14vw;
+
+}
+
+#monTitre {
+    color: blue;
+}
+
+#monTitre:hover {
+    color: red;
+}
+
