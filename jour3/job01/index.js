@@ -3,17 +3,17 @@ function main() {
     let b = prompt("Entre un nombre 2: ");
     let numA = parseFloat(a);
     let numB = parseFloat(b);
-    if (is_int(numA, numB)) {
+    if (is_float(numA, numB)) {
         operation(numA, numB)
     }
 }
 
-function is_int(a, b) {
+function is_float(a, b) {
     if (parseFloat(a) == parseFloat(a) && !isNaN(a) && parseFloat(b) == parseFloat(b) && !isNaN(b)) {
         console.log("les valeurs sont des nombres")
         return true;
     } else{
-        console.log("ERREUR ! Les valeurs ne sont pas des nombres")
+        console.error("ERREUR ! Les valeurs ne sont pas des nombres")
         return false;
     }
 }
