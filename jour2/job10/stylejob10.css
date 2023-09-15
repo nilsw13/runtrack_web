@@ -216,7 +216,8 @@ html,body {
     text-decoration: none;
 }
 
-.footer__message__container{
+.footer__message__container a{
+    text-decoration: none;
     color: var(--main--section--title--color);
     position: relative;
     left: 80%;
@@ -225,7 +226,7 @@ html,body {
 
 }
 
-.footer__message__container:hover{
+.footer__message__container a:hover{
     color: var(--main--bg-color);
 }
 
