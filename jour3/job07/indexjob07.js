@@ -39,9 +39,55 @@ function main(){
 
         document.body.appendChild(formulaire);
 
-    })
-    
+        // soumission / validation du formulaire
 
+        formulaire.addEventListener('submit', function(event){
+            event.preventDefault();
+            let nom = champNom.value;
+            let mail = champMail.value;
+            let msg = champMessage.value;
+
+
+            if (nom.trim() === "" || mail.trim() === "" || msg.trim() === ""){
+                alert("Veuillez remplir les champs avec des valeurs appropriées.");
+                return;
+            }
+
+            localStorage.setItem("nom", nom);
+            localStorage.setItem("mail", mail);
+            localStorage.setItem("msg", msg);
+
+            location.reload();
+        });
+
+        let sauvegardeNom = localStorage.getItem("nom");
+        let sauvegardeMail = localStorage.getItem("mail");
+        let sauvegardeMessage = localStorage.getItem("msg");
+
+        if (sauvegardeNom && sauvegardeMail && sauvegardeMessage) {
+            
+            sauvegardeNom = escapeHtml(sauvegardeNom);
+            sauvegardeMail = escapeHtml(sauvegardeMail);
+            sauvegardeMessage = escapeHtml(sauvegardeMessage)
+
+            let affichage = document.createElement("div");
+            affichage.textContent = `Nom sauvegardé : ${sauvegardeNom}`;
+            
+            let affichageMail = document.createElement("div");
+            affichageMail.textContent = `E-mail sauvegardé : ${sauvegardeMail}`;
+            
+            let affichageMessage = document.createElement("div");
+            affichageMessage.textContent = `Message sauvegardé : ${sauvegardeMessage}`;
+
+            document.body.insertBefore(affichage, formulaire);
+            document.body.insertBefore(affichageMail, formulaire);
+            document.body.insertBefore(affichageMessage, formulaire);
+        }
+    });
+}
+
+function escapeHtml(unsafe){
+    return unsafe.replace(/</g, "&lt;").replace(/>/g, "&gt;");
 }
 
 main();
